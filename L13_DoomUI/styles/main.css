@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#ui {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+}
+
+#ui > div {
+    padding: 1%;
+}
+
+#health {
+    color: rgb(224, 95, 95);
+    text-shadow: 2px 2px 5px black;
+}

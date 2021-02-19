@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuMon</title>
+    <script src="../FudgeCore/FudgeCore.js"></script>
+    <script src="../FudgeAid/FudgeAid.js"></script>
+    <script src="js/Monster.js"></script>
+    <script src="js/GameObject.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    </style>
+</head>
+<body>
+    <audio id="WORLD" loop autoplay src="assets/music/WORLD.mp3"></audio>
+    <audio id="FIGHTING" loop src="assets/music/FIGHTING.mp3"></audio>
+    <audio id="confirmAction" src="assets/music/BUTTON.mp3"></audio>
+    <audio id="attackSound" src="assets/music/ANGRIFF.mp3"></audio>
+    <audio id="levelUp" src="assets/music/LEVELUP.mp3"></audio>
+    <audio id="gefangen" src="assets/music/GEFANGEN.mp3"></audio>
+    <audio id="geflüchtet" src="assets/music/FLUCHT.mp3"></audio>
+    <audio id="heiltrank" src="assets/music/HEILTRANK.mp3"></audio>
+    <input type="range" min="0" max="100" value="20" id="audioSlider">
+    <label class="audioSlider" for="audioSlider">LAUTSTÄRKE</label>
+    <div id="kampfUI">
+        <div id="kampfPlayerUI">
+            <div id="team">
+            </div>
+            <div id="attacks">
+                <button class="combat">INFERNO</button>
+                <button class="combat">SINNFLUT</button>
+                <button class="combat">MEGARANKE</button>
+                <button class="combat">HEILTRANK</button>
+            </div>
+            <div id="actions">
+                <button id="einfangen" class="action">EINFANGEN</button>
+                <button class="action">FLIEHEN</button>
+            </div>
+        </div>
+        <div id="activeMonster">
+        </div>
+        <div id="enemy">
+        </div>
+    </div>
+    <canvas></canvas>
+</body>
+</html>

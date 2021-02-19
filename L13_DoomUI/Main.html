@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L12_Doom_StateMachine</title>
+    <script src="../FudgeCore/FudgeCore.js"></script>
+    <script src="../FudgeAid/FudgeAid.js"></script>
+    <script src="GameObject.js"></script>
+    <script src="Wall.js"></script>
+    <script src="Enemy.js"></script>
+    <script src="StateMachine.js"></script>
+    <script src="UI.js"></script>
+    <script src="Main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <style>
+      html, body {
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+      }
+      canvas {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+</head>
+<body>
+    <div id="ui">
+      <div id="player">
+        <div id="health"></div>
+        <div id="ammo"></div>
+      </div>
+      <div id="general">
+        <div id="score"></div>
+      </div>
+    </div>
+    <canvas></canvas>
+</body>
+</html>

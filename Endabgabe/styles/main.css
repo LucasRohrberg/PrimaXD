@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+}
+
+canvas {
+    width: 800px;
+    height: 800px;
+    outline: 1px black solid;
+}
+
+body {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+
+input {
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+}
+
+.audioSlider {
+    position: absolute;
+    top: 35px;
+    color: white;
+}
+
+#kampfUI {
+    visibility: hidden;
+    display: flex;
+    background-image: url("../assets/FIGHT_SPOTS.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    image-rendering: pixelated;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+}
+
+#kampfPlayerUI {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+    top: 608px;
+    background-color: grey;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+label {
+    width: 100%;
+    text-align: center;
+}
+
+#attacks {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#actions {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#team {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#team > div {
+    margin-left: 3%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+#activeMonster {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 342px;
+    right: 50px;
+}
+
+#enemy {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: grey;
+}
+
+meter {
+    width: 70%;
+}
+
+img {
+    image-rendering: pixelated;
+    width: 60%;
+}
