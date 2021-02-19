@@ -280,7 +280,7 @@ namespace Endabgabe {
             case "HEILTRANK":
                 sound = <HTMLAudioElement>document.getElementById("heiltrank");
                 sound.play();
-                activeMonster.hp += 10;
+                activeMonster.hp += activeMonster.level * 3;
                 if (activeMonster.hp > activeMonster.maxHp) activeMonster.hp = activeMonster.maxHp;
                 document.getElementById("hpLabel").innerText = `HP: ${activeMonster.hp}/${activeMonster.maxHp}`;
                 break;
